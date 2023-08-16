@@ -15,3 +15,6 @@ class DenseLayer(tf.keras.layers.Layer):
         # Feed through non-linear activation
         output = tf.sigmoid(z)
         return output
+    
+# This class is already implemented in TF as
+# layer = tf.keras.layers.Dense(units=n)
