@@ -11,6 +11,7 @@ for word in sentence:
 next_word_prediction = prediction
 
 
+# Similar to tf.keras.layers.SimpleRNN(rnn_units)
 class RNNCell(tf.keras.layers.Layer):
     def __init__(self, rnn_units, input_dim, output_dim):
         super(RNNCell, self).__init__()
